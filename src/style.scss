@@ -1,0 +1,76 @@
+//yea
+
+$blue: #4388ef;
+
+body {
+	background-color: #ddd;
+	padding: 0px;
+	margin: 0px; 
+	font-family: sans-serif; 
+}
+
+.card {
+	position: relative; 
+	margin: 0.6em; 
+	padding: 0.6em; 
+	background-color: #fff;
+	border-radius: 0.3em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.5);
+	text-align:center; 
+}
+
+.datepick-container {
+	display: inline-block; 
+	text-align: center; 
+}
+.datepick {
+	margin-top: 0.4em; 
+}
+
+.setting {
+	margin: 0.4em; 
+	line-height: 1.3em; 
+}
+.setting::before{
+	display: block; 
+}
+
+
+#chart-container{
+	width: 100%; 
+	overflow-x: scroll; 
+	overflow-y: hidden; 
+}
+
+#date {
+	text-align: left; 
+	margin-left: 0.4em;
+	color: #aaa;
+}
+
+#paper {
+	text-align: left; 
+	margin: 0.4em; 
+	padding: 0.4em; 
+	background-color: lighten($blue, 35%);
+	
+}
+
+.button{
+	margin-right: 0.4em; 
+	border-radius: 0.7em; 
+	height: 2em; 
+	line-height: 2em; 
+	background-color: $blue;  
+	padding-left: 1em; 
+	padding-right: 1em; 
+	display: inline-block; 
+	color: #ffffff;
+	user-select: none; 
+	cursor: pointer; 
+	font-weight: bold; 
+}
+
+.button:hover{
+	background-color: lighten($blue, 10%); 
+}

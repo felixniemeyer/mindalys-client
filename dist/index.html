@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+	<title>Mindalys</title>
+	<meta name="description" content="Journal analysis">
+	<meta name="author" content="mprnc">
+</head>
+
+<body>
+	
+	<div class="card">
+		<h1>Analysis</h1>
+		<div class="setting">user:<br/><input id="user" type="text" value="books"></input></div>
+		<div class="setting">user:<br/><input id="book" type="text" value="big-fish"></input></div>
+		<div class="datepick-container">
+			from
+			<div class="datepick" id="datepick-from"></div>
+		</div>
+		<div class="datepick-container">
+			to	
+			<div class="datepick" id="datepick-to"></div>
+		</div>
+		<div class="setting">kernel radius:<br/><input id="kernel-radius" type="text" value="6"></input> days</div>
+		<div class="setting">step size:<br/><input id="step-size" type="text" value="1"></input> days</div>
+		<div class="setting">min frequency peak:<br/><input id="min-frequency-peak" type="text" value="9"></input></div>
+		<div class="setting">min occurences:<br/><input id="min-occurences" type="text" value="11"></input></div>
+		<div class="error" id="analysis-status"></div>
+		<div class="button" id="analyze-button">analyze</div>
+		<div id="chart-container"></div>
+	</div>
+	<div class="card">
+		<h1>New Post</h1>
+		<div id="date">test</div>
+		<div id="paper"  contenteditable="true">edit me</div>
+		<div class="button" id="post-button">post</div>
+	</div>
+	<script src="bundle.js"></script>
+</body>
+</html>
+	
