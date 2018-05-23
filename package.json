@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test",
     "build": "webpack",
-	"watch": "webpack --watch --mode development"
+    "watch": "webpack --watch --mode development"
   },
   "author": "felix niemeyer",
   "license": "UNLICENSED",
