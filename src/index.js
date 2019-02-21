@@ -14,8 +14,8 @@ function init() {
 	datepickTo = TinyDatePicker(document.getElementById('datepick-to'), { mode: 'dp-permanent' });
 	document.getElementById('analyze-button').addEventListener('click', analyze); 
 	datepickTo.setState({
-		selectedDate: new Date("2017-07-16"),
-		highlightedDate: new Date("2018-04-01")
+		selectedDate: new Date(),
+		highlightedDate: new Date()
 	});
 	datepickFrom.setState({
 		selectedDate: new Date("2017-01-01"),
@@ -102,6 +102,7 @@ function analyze() {
 }
 
 function displayChart(results, from, to){
+  setAnalysisStatus('');
 	var chartContainer = document.getElementById('chart-container');
 	chartContainer.innerHTML = ""; 
 	var maxFrequency = 0; 
@@ -117,8 +118,8 @@ function displayChart(results, from, to){
 		0,
 		to, 
 		maxFrequency,
-		chartContainer.clientWidth*8,
-		600);
+		1024*10,
+		1024*2/3*0.8);
 	var svg = chart.generateSvg();
 	chartContainer.appendChild(svg); 
 }
